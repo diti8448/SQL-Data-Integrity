@@ -1,14 +1,31 @@
 # SQL Data Integrity & Unit Testing (HrvatskaDB)
 
-Ovaj projekt demonstrira napredno povezivanje Pythona s SQL Serverom uz primjenu **Unit Testing** metodologije za validaciju relacijskih podataka.
+This project demonstrates integration between Python and SQL Server with a focus on **data integrity validation and automated testing**.
 
-## Ključne funkcionalnosti
-* **Automatsko testiranje**: Provjera poslovne logike kroz `unittest` framework.
-* **Relacijski integritet**: Validacija `JOIN` operacija i stranih ključeva.
-* **Unicode podrška**: Ispravan rad s hrvatskim znakovima (N prefiks u SQL-u).
-* **Čist kod**: Odvajanje baze (SQL) od testne logike (Python).
+## Key Features
+- Automated testing using Python (`unittest`)
+- Validation of relational integrity (JOINs, foreign keys)
+- Unicode support for Croatian characters
+- Separation of database layer and test logic
 
-## Kako pokrenuti?
-1. Instalirajte ovisnosti: `pip install -r requirements.txt`
-2. Izvršite SQL skriptu u SSMS-u.
-3. Pokrenite testove: `python test_database.py`
+## Tech Stack
+- Python
+- SQL Server
+- pyodbc
+- unittest
+
+## Use Case
+Simulates real-world database validation scenarios where data consistency and integrity must be ensured (e.g. enterprise systems, backend services).
+
+## What I Learned
+- Writing unit tests for database-driven applications
+- Validating relational data using SQL JOIN operations
+- Integrating Python with SQL Server using pyodbc
+- Ensuring data integrity through automated checks
+
+## How to Run
+1. Install dependencies:
+   pip install -r requirements.txt
+2. Execute SQL script in SQL Server
+3. Run tests:
+   python test_database.py
