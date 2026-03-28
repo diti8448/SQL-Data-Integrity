@@ -161,6 +161,5 @@ class TestHrvatskaDB(unittest.TestCase):
         except pyodbc.IntegrityError:
             self.conn.rollback()  # Očekivano: SQL blokira brisanje zbog FK constrainta
 
-
 if __name__ == '__main__':
     unittest.main(verbosity=2)
