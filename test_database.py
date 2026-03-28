@@ -153,7 +153,6 @@ class TestHrvatskaDB(unittest.TestCase):
         Ne smije se moći obrisati županija koja ima povezane gradove.
         """
         # Id 1 je Krapinsko-zagorska, koja ima gradove u podacima
-        # Id 1 je Krapinsko-zagorska
         zupanija_id = 1 
         try:
             self.cursor.execute("DELETE FROM Zupanija WHERE Id = ?", (zupanija_id,))
