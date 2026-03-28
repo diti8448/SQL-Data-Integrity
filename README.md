@@ -25,7 +25,7 @@ This project demonstrates integration between **Python and SQL Server** with a f
 SQL-Data-Integrity/
 ├── HrvatskaDB_schema.sql   ← CREATE TABLE (run first)
 ├── HrvatskaDB_data.sql     ← INSERT data (run second)
-├── test_database.py        ← 7 automated tests
+├── test_database.py        ← 8 automated tests
 ├── requirements.txt
 └── README.md
 ```
@@ -41,6 +41,7 @@ SQL-Data-Integrity/
 | `test_5_stanovnistvo_pozitivno` | CHECK constraint rejects negative population |
 | `test_6_zupanija_unikatna` | UNIQUE constraint rejects duplicate county names |
 | `test_7_foreign_key_constraint` | FK constraint rejects invalid ZupanijaId |
+  `test_8_brisanje_zupanije_s_gradovima` | FK protection against deleting a parent with children |
 
 ## How to Run
 
@@ -84,12 +85,12 @@ test_4_logika_godina ... ok
 test_5_stanovnistvo_pozitivno ... ok
 test_6_zupanija_unikatna ... ok
 test_7_foreign_key_constraint ... ok
+test_8_brisanje_zupanije_s_gradovima ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.312s
+Ran 8 tests in 0.350s
 
 OK
-```
 
 ## What I Learned
 
